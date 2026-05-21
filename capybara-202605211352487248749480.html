@@ -1,0 +1,83 @@
+<html><head><style type="text/css">.turbo-progress-bar {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #0076ff;
+  z-index: 2147483647;
+  transition:
+    width 300ms ease-out,
+    opacity 150ms 150ms ease-in;
+  transform: translate3d(0, 0, 0);
+}
+</style>
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    
+
+    
+
+
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
+
+    <link rel="stylesheet" href="/assets/application-8b441ae0.css" data-turbo-track="reload">
+<link rel="stylesheet" href="/assets/tailwind-18e2d9b8.css" data-turbo-track="reload">
+    <script type="importmap" data-turbo-track="reload">{
+  "imports": {
+    "application": "/assets/application-bfcdf840.js",
+    "@hotwired/turbo-rails": "/assets/turbo.min-9fd88cd5.js",
+    "@hotwired/stimulus": "/assets/stimulus.min-4b1e420e.js",
+    "@hotwired/stimulus-loading": "/assets/stimulus-loading-1fc53fe7.js",
+    "controllers/application": "/assets/controllers/application-3affb389.js",
+    "controllers/hello_controller": "/assets/controllers/hello_controller-708796bd.js",
+    "controllers": "/assets/controllers/index-ee64e1f1.js"
+  }
+}</script>
+<link rel="modulepreload" href="/assets/application-bfcdf840.js">
+<link rel="modulepreload" href="/assets/turbo.min-9fd88cd5.js">
+<link rel="modulepreload" href="/assets/stimulus.min-4b1e420e.js">
+<link rel="modulepreload" href="/assets/stimulus-loading-1fc53fe7.js">
+<link rel="modulepreload" href="/assets/controllers/application-3affb389.js">
+<link rel="modulepreload" href="/assets/controllers/hello_controller-708796bd.js">
+<link rel="modulepreload" href="/assets/controllers/index-ee64e1f1.js">
+<script type="module">import "application"</script>
+  <title>Editing ticket</title></head>
+
+  <body>
+    <main class="container mx-auto mt-28 px-5 flex">
+      <turbo-frame id="ticket_980190962" busy="" aria-busy="true">
+
+<div class="md:w-2/3 w-full">
+  <h1 class="font-bold text-4xl">Editing ticket</h1>
+
+  <form class="contents" action="/tickets/980190962" accept-charset="UTF-8" method="post" aria-busy="true"><input type="hidden" name="_method" value="patch" autocomplete="off">
+
+  <div class="my-5">
+    <label for="ticket_title">Title</label>
+    <input class="block shadow-sm rounded-md border px-3 py-2 mt-2 w-full border-gray-400 focus:outline-blue-600" type="text" value="MyString" name="ticket[title]" id="ticket_title">
+  </div>
+
+  <div class="my-5">
+    <label for="ticket_description">Description</label>
+    <input class="block shadow-sm rounded-md border px-3 py-2 mt-2 w-full border-gray-400 focus:outline-blue-600" type="text" value="MyString" name="ticket[description]" id="ticket_description">
+  </div>
+
+  <div class="inline">
+    <input type="submit" name="commit" value="Update Ticket" class="w-full sm:w-auto rounded-md px-3.5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white inline-block font-medium cursor-pointer" data-disable-with="Update Ticket" disabled="">
+  </div>
+</form>
+
+  <a class="w-full sm:w-auto text-center mt-2 sm:mt-0 sm:ml-2 rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium" href="/tickets/980190962">Show this ticket</a>
+  <a class="w-full sm:w-auto text-center mt-2 sm:mt-0 sm:ml-2 rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium" href="/tickets">Back to tickets</a>
+</div>
+</turbo-frame>
+    </main>
+  
+
+</body></html>

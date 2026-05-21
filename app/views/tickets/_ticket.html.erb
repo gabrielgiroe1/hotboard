@@ -1,3 +1,4 @@
+<%= turbo_frame_tag ticket do %>
 <div id="<%= dom_id ticket %>" class="w-full sm:w-auto my-5 space-y-5">
   <div>
     <strong class="block font-medium mb-1">Title:</strong>
@@ -8,3 +9,6 @@
     <%= ticket.description %>
   </div>
 </div>
+  <%= link_to "Edit", edit_ticket_path(ticket), class: "w-full sm:w-auto text-center rounded-md px-3.5 py-2.5 bg-gray-100 hover:bg-gray-50 inline-block font-medium" %>
+
+<% end %>
