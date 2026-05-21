@@ -63,4 +63,4 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "minitest", "~> 5.22"
+gem "minitest", "~> 6.0"
