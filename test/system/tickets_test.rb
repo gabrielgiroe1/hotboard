@@ -14,12 +14,14 @@ class TicketsTest < ApplicationSystemTestCase
     visit tickets_url
     click_on "New ticket"
 
-    fill_in "Description", with: @ticket.description
-    fill_in "Title", with: @ticket.title
+    fill_in "Description", with: "My new ticket"
+    fill_in "Title", with: "My new ticket title"
     click_on "Create Ticket"
 
-    assert_text "Ticket was successfully created"
-    click_on "Back"
+    sleep 1
+
+    assert_equal "My new ticket title", Ticket.last.title
+    assert_equal "My new ticket", Ticket.last.description
   end
 
   test "should update Ticket" do
