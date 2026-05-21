@@ -32,6 +32,7 @@ class TicketsTest < ApplicationSystemTestCase
     fill_in "Title", with: updated_title
     fill_in "Description", with: updated_description
     click_on "Update Ticket"
+    sleep 1
 
     @ticket.reload
 
