@@ -26,12 +26,17 @@ class TicketsTest < ApplicationSystemTestCase
     visit ticket_url(@ticket)
     click_on "Edit this ticket", match: :first
 
-    fill_in "Description", with: @ticket.description
-    fill_in "Title", with: @ticket.title
+    updated_title = "this is a test title"
+    updated_description = "this is a test description"
+
+    fill_in "Title", with: updated_title
+    fill_in "Description", with: updated_description
     click_on "Update Ticket"
 
-    assert_text "Ticket was successfully updated"
-    click_on "Back"
+    @ticket.reload
+
+    assert_equal updated_description, @ticket.description
+    assert_equal updated_title, @ticket.title
   end
 
   test "should destroy Ticket" do
