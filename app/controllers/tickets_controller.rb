@@ -28,7 +28,7 @@ class TicketsController < ApplicationController
       flash.notice = "Ticket was successfully created."
       respond_to do |format|
         format.turbo_stream
-        format.html { redirect_to @ticket}
+        format.html { redirect_to @ticket }
       end
     else
       render :new, status: :unprocessable_content
