@@ -7,3 +7,6 @@ application.debug = false
 window.Stimulus   = application
 
 export { application }
+addEventListener("turbo:render", (event)=> {
+  console.log("Turbo Rendered with: ", event.detail.renderMethod);
+})
